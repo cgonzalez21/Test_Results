@@ -1,8 +1,5 @@
-from logging import FATAL
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
-from selenium.webdriver.support.wait import WebDriverWait
-from pages.matched_page import MatchedPage
 import time
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from pages.base_page import BasePage
@@ -86,14 +83,6 @@ class MainPage(BasePage):
     def click_first_related_news(self):
         try:
             element = self.find_element(*self.locator.FIRST_RELATED_NEWS_BUTTON)
-            if(element.len() > 0):
-                return True
-        except NoSuchElementException:
-            return False
-
-    def click_last_related_news(self):
-        try:
-            element = self.find_element(*self.locator.LAST_RELATED_NEWS_BUTTON)
             if(element.len() > 0):
                 return True
         except NoSuchElementException:

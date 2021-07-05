@@ -15,6 +15,5 @@ testCases = [
     ['Blocker', 'In Find My Match Section, when user type a valid zip code, he should see Find my match box'],
     ['Blocker', 'User is seing the Recall news, when he/she share it via twitter'],
     ['Blocker', 'User is seing the Recall news, when he/she share it via facebook'],
-    ['Blocker', 'User is seing the first listed in Related News'],
-    ['Blocker', 'User is seing the lasted listed in Related News'],
+    ['Blocker', 'User is seing the related news'],
 ]
